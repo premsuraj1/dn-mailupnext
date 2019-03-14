@@ -20,7 +20,7 @@ html,body{
 	width: 99%;
 }
 
-.header{
+header{
 	width: 100%;
 	height: 80px;
 	position: fixed;
@@ -28,13 +28,11 @@ html,body{
 	justify-content: center;
 	align-items: center;
 	margin: -.6%;
-	padding: 0;
 	background-color: white;
 }
 
-.header img{
+header img{
 	height: 60px;
-	margin-right: 17%;
 }
 
 .menu ul{
@@ -48,7 +46,7 @@ html,body{
 }
 
 .menu li a{
-	text-decoration: none;
+	text-decoration: none;				
 }
 
 .butn{
@@ -128,7 +126,6 @@ html,body{
 .container1{
 	position: absolute;
 	margin-top: 80%;
-	display: flex;
 	z-index: -2;
 }
 
@@ -172,11 +169,11 @@ html,body{
 	height: 80%;
 	z-index: -2;
 	margin-top: -10%;
-	width: 99%;
+	width: 98%;
 }
 
 .rotate-img img{
-	transform: skewY(-10deg);
+	transform: skewY(-8deg);
 	width: 580px;
 	height: 400px;
 	margin-left: 3%;
