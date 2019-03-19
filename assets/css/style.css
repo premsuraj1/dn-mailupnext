@@ -26,8 +26,9 @@ header{
 
 .menu li a{
 	font-family: "Poppins", sans-serif;
+    cursor: pointer;
     font-size: 12px;
-        padding: 0 8px 0px 8px;
+    padding: 0 8px 0px 8px;
     font-size: 500;
 	color: black;
 	text-decoration: none;				
@@ -35,6 +36,7 @@ header{
 
 .butn{
 	border: none;
+	color: white;
 	background-color: #49e4fa;
 	cursor: pointer;
 	text-decoration: none;
@@ -55,30 +57,28 @@ header{
 	background: linear-gradient(0deg, #bfacff 0%, #795fff 100%);
 	transform: skewY(-10deg);
 	z-index: -2;
-	height: 575px;
+	text-align: center;
+	height: 675px;
 	width: 100%;
 }
 
 .text{
+	font-family: "Poppins", sans-serif;
+	color: white;
 	transform: skewY(10deg);
-	text-align: center;
-	padding-top: 10%;
 }
 
 .text h1{
+	font-weight: 300;
 	width: 100%;
-	margin-top: 5%;
+	margin-top: 17%;
 	font-size: 50px;
-	text-align: center;
-	color: black;
 }
 
 .text p{
 	width: 100%;
 	font-size: 16px;
-	text-align: center;
 	margin-bottom: 3%;
-	color: black;
 }
 
 .text .buton{
@@ -103,22 +103,26 @@ header{
 }
 
 .computer-img img{
-	height: 400px;
+	height: auto;
+	max-width: 100%;
+}
+
+.right-text-btn{
+	font-family: "Poppins", sans-serif;
 }
 
 .right-text-btn  h1{
 	padding-top: 2%;
-	width: 440px;
-    font-size: 58px;
+	max-width: 440px;
+    font-size: 48px;
 }
 
 .right-text-btn  p{
-	font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
 	color: #777777;
 	line-height: 22px;
-	width: 426px;
+	max-width: 411px;
 }
 
 .right-text-btn .pattern-right img{
@@ -130,48 +134,34 @@ header{
 	margin: 6% 0 0 0;
 }
 
-.container1{
-	margin-top: -8%;
-	z-index: -2;
-	width: 100%;
-}
-
-.left{
-	margin: 10% 0 0 0;
+.mobile-image{
+	padding: 10% 0;
 }
 
 .left h1{
-	padding-left: 10%;
-	width: 500px;
+	font-family: "Poppins", sans-serif;
+	max-width: 480px;
 	font-size: 48px;
 }
 
 .left p{
-	padding-left: 10%;
 	font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
 	color: #777777;
 	line-height: 22px;
 	margin-bottom: 5%;
-	width: 450px;
-}
-
-.left .butn{
-	margin-left: 10%;
-	z-index: 2;
-}
-
-.right{
-	margin-top: 15%;
+	max-width: 460px;
 }
 
 .right img{
-	width: 540px;
+	width: 100%;
 }
 
-.container1 .pattern-right-img img{
+.mobile-image .pattern-right-img img{
 	width: 350px;
+	position: absolute;
+	left: 1.7%;
 	height: 450px;
 	transform: skewY(-6deg);
 	margin-top: -3%;
@@ -181,160 +171,132 @@ header{
 .rotate-img{
 	transform: skewY(-10deg);
 	background: linear-gradient(135deg, #bfacff 0, #795fff 100%);
-	height: 700px;
 	z-index: -2;
-	margin-top: -10%;
-	width: 100%;
+	padding: 10% 0;
+	margin-top: 11.3%;
 }
 
 .rotate img{
 	transform: skewY(-5deg);
-	width: 500px;
-	height: 500px;
-	padding: 25% 0 0 3%;
+	max-width: 100%;
+	height: auto;
 }
 
 .rotate-text{
+	font-family: "Poppins", sans-serif;
 	transform: skewY(10deg);
 	color: white;
-	margin-top: 12%;
 }
 
 .rotate-text h1{
-	width: 400px;
+	padding-top: 12%;
+	max-width: 350px;
 	font-size: 48px;
 }
 
 .rotate-text p{
+	font-size: 14px;
+	font-weight: 300;
 	line-height: 35px;
-    margin-bottom: 10%;
-    letter-spacing: -.6px;
+    margin-bottom: 8%;
+    letter-spacing: .3px;
 }
 
-.container2{
-	margin: 3% 0 0 0;
+.text-image-btn h1{
+	font-family: "Poppins", sans-serif;
+	font-size: 36px;
 }
 
-.container2-text{
-	z-index: 2;
-}
-
-.container2-text h1{
-	width: 450px;
-	padding-left: 15%;
-	font-size: 40px;
-}
-
-.container2-text p{
-	width: 480px;
-	padding-left: 15%;
+.text-image-btn p{
 	font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
-	color: #777777;
 	line-height: 20px;
 }
 
-.container2-image img{
-	width: 400px;
-	height: 300px;
-	margin-left: 10%;
+.text-image{
+	margin-top: 4%;
+	width: 100%;
+	height: auto;
 }
 
-.container2 .pattern-left-image img{
-	/*width: 400px;*/
-	/*height: 400px;*/
-	transform: translateY(-21%);
+.pattern-left-image img{
 	position: absolute;
 	left: 1.7%;
-}
-
-.container3{
-	clip-path: polygon(0 18%, 100% 0, 100% 69%, 0 88%);
-	background: #7d95ff;
-	height: 920px;
-	z-index: -2;	
-	width: 100%;
-	margin-top: -.7%;
-}
-
--img{
-	margin: 16% 0 0 0;
+	margin-top: -8%;
 	transform: skewY(-10deg);
 }
 
+.big-image-text{
+	background: linear-gradient(135deg, #bfacff 0, #795fff 100%);
+	transform: skewY(-10deg);
+	z-index: -2;	
+	width: 100%;
+	padding: 10% 0;
+}
+
 .big-img img{
-	width: 430px;
-	height: 500px;
-	transform: translateY(40%);
-	padding-left: 10%;
+	max-width: 100%;
+	height: auto;
 }
 
 .container3-text{
+	transform: skewY(10deg);
 	color: white; 
+	font-family: "Poppins", sans-serif;
 }
 
 .container3-text h1{
-	width: 500px;
-	padding-top: 25%;
+	max-width: 350px;
 	font-size: 48px;
 }
 
 .container3-text p{
 	line-height: 35px;
     margin-bottom: 10%;
-    letter-spacing: -.6px;
+    letter-spacing: .3px;
 }
 
-.container4{
-	display: flex;
-	margin-top: -15%;
-	z-index: -2;
-	align-items: center;
+.email-image-text{
+	padding: 10% 0;
 }
 
 .responsive-text h1{
-	transform: translateX(15%);
-	width: 395px;
-	padding-top: 20%;
+    font-family: "Poppins", sans-serif;
+	max-width: 508px;
 	font-size: 48px;
 }
 
 .responsive-text p{
-	transform: translateX(12%);
-	color: #777777;
 	line-height: 23px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    margin-bottom: 10%; 
+    margin-bottom: 8%; 
     font-weight: 300;
-	width: 490px;
-}
-
-.responsive-text .butn{
-	margin-left: 12%;
+	max-width: 430px;
 }
 
 .email-img img{
-	width: 500px;
-	height: 400px;
-	margin: 9% 0 0 8%;
+	margin-top: 4%;
+	width: 100%;
+	height: auto;
 }
 
-.container5{
+.Successful-btn{
 	background: linear-gradient(135deg, #bfacff 0, #795fff 100%);
-	height: 500px;
 	width: 100%;
 	z-index: -2;
+	padding: 20% 0;
+	text-align: center;
 	transform: skewY(-10deg);
 	margin-top: 6%;
 }
 
 .Successful-text{
+	font-family: "Poppins", sans-serif;
 	color: white;
+	background-size: cover;
 	transform: skewY(10deg);
-	text-align: center;
-	padding-top: 8%;
 }
 
 .Successful-text h1{
@@ -342,19 +304,15 @@ header{
 }
 
 .Successful-text p{
-    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
-	width: 52%;
 	line-height: 21px;
-	margin-left: 25%;
-    margin-bottom: 3%;
+	margin: 5% 0;
     letter-spacing: .2px;
 }
 
 .footer{
-	padding: 10% 0 0 10%;
-	margin-top: 10%;
+	padding: 15% 0 0 10%;
 	background-color: white; 	
 }
 
@@ -379,7 +337,13 @@ header{
 	line-height: 24px;
 }
 
-.wrap1 p{
+.wrap1 ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.wrap1 li a{
+	text-decoration: none;
 	font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
