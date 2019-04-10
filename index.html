@@ -7,12 +7,12 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header>
+      <header id="header" class="header-scrolled">
         <div class="logo">
           <img src="assets/img/logo.png">
         </div>
-        <div class="menu">
-          <ul>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
             <li><a href="#">HOME</a></li>
             <li><a href="#">FEATURES</a></li>
             <li><a href="#">PRIVACY</a></li>
@@ -22,7 +22,7 @@
             <li class="butn"><a href="#">SIGNUP FREE</a></li>
             <li class="butn"><a href="#">LOGIN</a></li>
           </ul>
-        </div>
+        </nav>
       </header>
       <section class="text-btn">
         <div class="row">
@@ -32,7 +32,7 @@
             <a href="#" class="buton">GET STARTED FOR FREE NOW</a>
           </div> 
         </div>
-        <div class="side-image">
+        <div class="side-image d-none d-lg-block">
           <img src="assets/img/img.png">
         </div>
       </section>
@@ -46,7 +46,7 @@
               <h1>Complete email marketing solution.</h1>
               <p>Single/double opt-in, list segmenting/importing/exporting, subscription management, blacklisting, automation/autoresponder, etc.</p>
               <a href="#" class="butn">SIGNUP FREE</a>
-              <div class="pattern-right">
+              <div class="pattern-right d-none d-lg-block">
                 <img src="assets/img/img2.png">
               </div>
             </div>
@@ -65,7 +65,7 @@
               <img src="assets/img/img3.png">
             </div>
           </div>
-          <div class="pattern-right-img">
+          <div class="pattern-right-img d-none d-lg-block">
             <img src="assets/img/img4.png">
           </div>
         </div>
@@ -96,9 +96,9 @@
             <a href="#" class="butn">SIGNUP FREE</a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <img class="text-image mx-auto d-block" src="assets/img/img6.jpg">
+            <img class="text-image" src="assets/img/img6.jpg">
           </div>
-          <div class="pattern-left-image">
+          <div class="pattern-left-image d-none d-lg-block">
             <img src="assets/img/img4.png">
           </div>
         </div>
@@ -131,7 +131,7 @@
                 <a href="#" class="butn">SIGNUP FREE</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 email-img">
-                <img class="mx-auto d-block" src="assets/img/img8.jpg">
+                <img  src="assets/img/img8.jpg">
               </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
         </div>
       </section>
       <div class="footer">
-        <div class="footer-img">
+        <div class="footer-img d-none d-lg-block">
          <img src="assets/img/img2.png">
         </div>
         <div class="container">
@@ -171,5 +171,19 @@
         <p>Copyright © 2019 All rights reserved <br> to Mailupnext</p>
       </footer>
     </div>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("header");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("header-scrolled");
+        } else {
+          header.classList.remove("header-scrolled");
+        }
+      }
+    </script>
   </body>
 </html>
